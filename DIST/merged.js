@@ -1,0 +1,1 @@
+var vue=new Vue({el:"#app",data:{CRT:0},methods:{to:function(s){scrollTo(0,0),this.CRT=s},secClass:function(s){return this.CRT==s?"displaying":this.CRT>s?"passed":"waiting"}}});

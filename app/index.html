@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="dns-prefetch" href="//cdn.bootcss.com">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+    <script src="http://cdn.bootcss.com/vue/1.0.26/vue.min.js"></script>
+    <div id="app">
+        <section class="{{secClass(0)}}" @click='to(1)'>
+            <h1 v-for="item in 42">{{item}}</h1>
+        </section>
+        <section class="{{secClass(1)}}" @click='to(2)'>
+            <h2 v-for="item in 42">{{item}}</h2>
+        </section>
+        <section class="{{secClass(2)}}" @click='to(3)'>
+            <h3 v-for="item in 42">{{item}}</h3>
+        </section>
+        <section class="{{secClass(3)}}" @click='to(0)'>
+            <h4 v-for="item in 42">{{item}}</h4>
+        </section>
+    </div>
+
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
